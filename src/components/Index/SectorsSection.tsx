@@ -89,11 +89,11 @@ export default function SectorsSection({ activeSectorTab, onActiveSectorTabChang
   const activePanelStatic = panelsData[activeTab] || panelsData.finance;
 
   return (
-    <section className="py-24 bg-steel-deep border-b border-white/10" id="sectors">
+    <section className="py-12 sm:py-24 bg-steel-deep border-b border-white/10" id="sectors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 pb-8 border-b border-white/10">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6 pb-5 border-b border-white/10 sm:gap-6 sm:mb-12 sm:pb-8">
           <div>
             <div className="inline-flex items-center gap-2 px-2.5 py-1 border border-white/10 bg-white/5 mb-4">
               <FontAwesomeIcon icon={faBuilding} className="text-xs text-steel-blue" />
@@ -109,7 +109,7 @@ export default function SectorsSection({ activeSectorTab, onActiveSectorTabChang
         </div>
 
         {/* Tab Nav */}
-        <div className="flex overflow-x-auto whitespace-nowrap gap-2 mb-8 pb-3 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none md:overflow-x-visible md:whitespace-normal">
+        <div className="flex overflow-x-auto whitespace-nowrap gap-2 mb-5 pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:mb-8 scrollbar-none md:overflow-x-visible md:whitespace-normal">
           {sectorsStatic.map((sector) => {
             const label = 
               sector.key === 'finance' ? t.tabs.finance :

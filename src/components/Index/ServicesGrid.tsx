@@ -50,11 +50,11 @@ const ServicesGrid = ({ lang }: ServicesGridProps) => {
   const t = translations[lang].services;
 
   return (
-    <section className="py-24 bg-steel-deep border-b border-white/10" id="services">
+    <section className="py-12 sm:py-24 bg-steel-deep border-b border-white/10" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         
         {/* Section header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 pb-8 border-b border-white/10">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8 pb-6 border-b border-white/10 sm:gap-6 sm:mb-16 sm:pb-8">
           <div>
             <div className="inline-flex items-center gap-2 px-2.5 py-1 border border-white/10 bg-white/5 mb-4">
               <span className="font-mono text-[10px] font-500 text-white/60 tracking-widest uppercase">{t.tag}</span>

@@ -110,7 +110,7 @@ export default function MetricsSection({ lang }: MetricsSectionProps) {
 
   return (
     <section
-      className="py-24 relative overflow-hidden border-b border-white/10"
+      className="py-12 sm:py-24 relative overflow-hidden border-b border-white/10"
       id="metrics"
       style={{ background: '#10151c' }}
     >
@@ -125,7 +125,7 @@ export default function MetricsSection({ lang }: MetricsSectionProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-white/10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-6 border-b border-white/10 sm:gap-6 sm:mb-16 sm:pb-8">
           <div>
             <div className="inline-flex items-center gap-2 px-2.5 py-1 border border-white/10 bg-white/5 mb-4">
               <FontAwesomeIcon icon={faGlobe} className="text-xs text-brass" />
@@ -141,7 +141,7 @@ export default function MetricsSection({ lang }: MetricsSectionProps) {
         </div>
 
         {/* Metrics Grid (Borders via gap-px) */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10 mb-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10 mb-6 sm:mb-12">
           {[
             { label: t.block1, val: '140', suffix: '+' },
             { label: t.block2, val: '$2.4', suffix: 'B', color: 'text-brass' },

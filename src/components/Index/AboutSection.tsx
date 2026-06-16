@@ -11,11 +11,11 @@ const AboutSection = ({ lang }: AboutSectionProps) => {
   const t = translations[lang].about;
 
   return (
-    <section className="py-24 relative overflow-hidden border-b border-white/10" id="about" style={{ background: "#10151c" }}>
+    <section className="py-12 sm:py-24 relative overflow-hidden border-b border-white/10" id="about" style={{ background: "#10151c" }}>
       <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-[0.08]" style={{ background: "radial-gradient(ellipse at right center, #3b82f6, transparent 70%)" }}></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-16 items-start">
           
           {/* Left: Text Content (7 columns) */}
           <div className="lg:col-span-7">
@@ -24,13 +24,13 @@ const AboutSection = ({ lang }: AboutSectionProps) => {
               <span className="font-mono text-[10px] font-500 text-cyan tracking-widest uppercase">{t.tag}</span>
             </div>
             
-            <h2 className="font-heading font-700 text-3xl sm:text-5xl text-white tracking-tight leading-none uppercase mb-8">
+            <h2 className="font-heading font-700 text-3xl sm:text-5xl text-white tracking-tight leading-none uppercase mb-5 sm:mb-8">
               {t.title}<br />
               <span className="font-serif italic font-light text-cyan text-3xl sm:text-5xl normal-case">{t.titleItalic}</span>
             </h2>
             
             {/* Newspaper Column Flow */}
-            <div className="columns-1 sm:columns-2 gap-8 font-body text-sm text-white/50 leading-relaxed mb-10 pb-8 border-b border-white/10">
+            <div className="columns-1 sm:columns-2 gap-8 font-body text-sm text-white/50 leading-relaxed mb-6 pb-6 border-b border-white/10 sm:mb-10 sm:pb-8">
               <p className="mb-4">
                 {t.desc1}
               </p>

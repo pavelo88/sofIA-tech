@@ -11,7 +11,7 @@ const HeroSection = ({ lang }: HeroSectionProps) => {
   const t = translations[lang].hero;
 
   return (
-    <section className="relative min-h-screen flex flex-col lg:flex-row items-stretch overflow-hidden border-b border-white/10" id="hero" style={{ background: "#10151c" }}>
+    <section className="relative lg:min-h-screen flex flex-col lg:flex-row items-stretch overflow-hidden border-b border-white/10" id="hero" style={{ background: "#10151c" }}>
       {/* Background grid pattern */}
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "40px 40px" }}></div>
       {/* Radial glow */}
@@ -72,13 +72,13 @@ const HeroSection = ({ lang }: HeroSectionProps) => {
       </div>
 
       {/* ===================== TEXT + METRICS — mobile below image ===================== */}
-      <div className="relative z-10 flex flex-col justify-center w-full lg:hidden px-5 pt-6 pb-10">
+      <div className="relative z-10 flex flex-col justify-center w-full lg:hidden px-5 pt-5 pb-8">
         {/* Tag */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 border border-cyan/20 bg-cyan/5 mb-5 self-start">
+        <div className="inline-flex items-center gap-2 px-3 py-1 border border-cyan/20 bg-cyan/5 mb-3 self-start">
           <span className="font-mono text-[9px] font-500 text-cyan tracking-widest uppercase">{t.tag}</span>
         </div>
 
-        <h1 className="font-heading font-700 text-white tracking-tight leading-[0.9] mb-5">
+        <h1 className="font-heading font-700 text-white tracking-tight leading-[0.9] mb-4">
           <span className="block text-4xl font-light">{t.line1}</span>
           <span
             className="block text-4xl font-serif italic text-transparent bg-clip-text"
@@ -90,7 +90,7 @@ const HeroSection = ({ lang }: HeroSectionProps) => {
           >{t.line3}</span>
         </h1>
 
-        <p className="font-body text-sm text-white/60 leading-relaxed mb-6 border-l-2 border-cyan/30 pl-4">
+        <p className="font-body text-sm text-white/60 leading-relaxed mb-4 border-l-2 border-cyan/30 pl-4">
           {t.desc}
         </p>
 
@@ -105,7 +105,7 @@ const HeroSection = ({ lang }: HeroSectionProps) => {
         </div>
 
         {/* Metrics strip */}
-        <div className="grid grid-cols-3 gap-4 pt-6 mt-6 border-t border-white/10">
+        <div className="grid grid-cols-3 gap-3 pt-5 mt-5 border-t border-white/10">
           <div>
             <p className="font-mono text-[9px] text-white/40 uppercase tracking-widest mb-1">{t.metric1}</p>
             <p className="font-heading font-700 text-2xl text-white">140+</p>
